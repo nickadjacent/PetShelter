@@ -12,4 +12,4 @@ app.use(express.json());
 
 require("./routes/pet.routes")(app);
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(port, () => console.log(`Listening on port ${port}...`));

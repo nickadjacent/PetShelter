@@ -15,19 +15,20 @@ function App() {
   return (
     <>
       <body>
-        <h1 className="container-flex justify-content-center card-header shadow-lg p-5" 
+        <h1 className="container-flex justify-content-center card-header shadow-lg p-5"
           style={{
             backgroundColor: "rgba(0,0,0, 0.65)",
             color: "white",
-            fontWeight: "bold"}}>
+            fontWeight: "bold"
+          }}>
           Pet Shelter
         </h1>
         <div className="container-flex justify-content-center">
           <Router>
-          <Pets path="/" />
-          <AddPet path="/pets/new" />
-          <PetDetails path="/pets/:id" />
-          <EditPet path="/pets/:id/edit" />
+            <Pets path="/" />
+            <AddPet path="/pets/new" />
+            <PetDetails path="/pets/:id" />
+            <EditPet path="/pets/:id/edit" />
           </Router>
         </div>
       </body>

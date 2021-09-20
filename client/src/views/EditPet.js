@@ -59,13 +59,15 @@ const EditPet = props => {
                     <Link class="text-light" to="/">Home</Link>
                 </button>
             </div>
-            <br/>
+            <br />
             <div>
-                <Header style={{backgroundColor: "rgba(0,0,0, 0.75)",
-            color: "white",
-            fontWeight: "bold"}} className="card-header">Update {name}'s profile!</Header>
+                <Header style={{
+                    backgroundColor: "rgba(0,0,0, 0.75)",
+                    color: "white",
+                    fontWeight: "bold"
+                }} className="card-header">Update {name}'s profile!</Header>
             </div>
-            <br/>
+            <br />
             <form onSubmit={handleSubmit}>
                 <div class="form-group">
                     <label>Name: </label>
@@ -77,8 +79,8 @@ const EditPet = props => {
                     {errors.name ? (
                         <span className="error">{errors.name.message}</span>
                     ) : (
-                            ""
-                        )}
+                        ""
+                    )}
                 </div>
 
                 <div class="form-group">
@@ -91,8 +93,8 @@ const EditPet = props => {
                     {errors.petType ? (
                         <span className="error">{errors.petType.message}</span>
                     ) : (
-                            ""
-                        )}
+                        ""
+                    )}
                 </div>
 
                 <div class="form-group">

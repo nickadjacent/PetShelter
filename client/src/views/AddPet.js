@@ -48,13 +48,15 @@ const AddPet = props => {
                     <Link class="text-light" to="/">Home</Link>
                 </button>
             </div>
-            <br/>
+            <br />
             <div>
-                <Header style={{backgroundColor: "rgba(0,0,0, 0.75)",
-            color: "white",
-            fontWeight: "bold"}} className="card-header">Do you know a pet who needs a home?</Header>
+                <Header style={{
+                    backgroundColor: "rgba(0,0,0, 0.75)",
+                    color: "white",
+                    fontWeight: "bold"
+                }} className="card-header">Do you know a pet who needs a home?</Header>
             </div>
-            <br/>
+            <br />
             <form onSubmit={handleSubmit}>
                 <div class="form-group">
                     <label>Pet Name:</label>
@@ -80,8 +82,8 @@ const AddPet = props => {
                 </div>
 
                 <div class="form-group">
-                    <label>Pet Discription:</label>
-                    <textarea  class="form-control"
+                    <label>Pet Description:</label>
+                    <textarea class="form-control"
                         onChange={event => setDescription(event.target.value)}
                         type="text"
                     />
