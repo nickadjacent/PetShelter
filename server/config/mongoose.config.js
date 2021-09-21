@@ -10,5 +10,3 @@ module.exports = db_name => {
         .then(() => console.log(`Mongoose successfully connected to ${db_name}`))
         .catch(err => console.log("Mongoose connection failed: ", err));
 };
-
-for
